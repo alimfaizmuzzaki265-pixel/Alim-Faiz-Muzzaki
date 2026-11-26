@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Kelas XII TKJ 1 </title>
+    <title>Biodata Kelas XII TKJ 1</title>
 
     <style>
         * {
@@ -68,6 +68,7 @@
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             line-height: 1.8;
+            margin-bottom: 20px;
         }
 
         .anggota {
@@ -79,29 +80,31 @@
 
         .card {
             background: white;
-            width: 230px;
+            width: 250px;
             padding: 20px;
             text-align: center;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
+        /* Perbaikan CSS Foto */
         .foto {
-    width: 100%;
-    aspect-ratio:4/3;
-    text-align: center;
-    cursor:pointer;
-    object-fit: cover;
-    display: block;
-    border-radius:0;
-    transform:scale(1.03);
-}
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
 
-.foto img {
-    width:100%;
+        .foto img {
+            width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
 
+        .foto img:hover {
+            transform: scale(1.05);
         }
 
         .card h3 {
@@ -111,6 +114,7 @@
 
         .card p {
             margin: 7px 0;
+            font-size: 14px;
         }
 
         .info {
@@ -167,101 +171,88 @@
         <h2>Biodata Negara!!</h2>
 
         <div class="profil">
-            <p>
-                selamat datang ke Web negara
-                <b>Kelas 12 kepenjit 1</b>.
-            </p>
-
-            <p>
-                Web negara           </p>
+            <p>Selamat datang ke Web negara <b>Kelas 12 kepenjit 1</b>.</p>
+            <p>Web negara</p>
         </div>
     </section>
 
     <!-- PROFIL -->
     <section id="profil">
-
         <h2>Profil Kelas</h2>
-
         <div class="profil">
-
             <p><b>Nama Sekolah:</b> SMK SETIA DARMA PALEMBANG</p>
             <p><b>Kelas:</b> XII TKJ1</p>
-            <p><b>Wali Kelas:</b> Diah Bunga Gita Sari,S,Com.,Gr</p>
-            <p><b>Tahun Pelajaran:</b> 2026/2027
-
+            <p><b>Wali Kelas:</b> Diah Bunga Gita Sari, S.Com., Gr</p>
+            <p><b>Tahun Pelajaran:</b> 2026/2027</p>
         </div>
-
     </section>
 
     <!-- ANGGOTA -->
     <section id="anggota">
-
         <h2>Biodata Negara</h2>
-
         <div class="anggota">
 
+            <!-- Card 1 -->
             <div class="card">
                 <div class="foto">
-    <img src= "f36eed0f6bc17bb82f55dcfb7a3ff1dc">
-                <h3></h3>
+                    <img src="f36eed0f6bc17bb82f55dcfb7a3ff1dc.jpg" alt="Foto Anggota 1">
+                </div>
+                <h3>Anggota 1</h3>
                 <p><b>NIS:</b> 001</p>
                 <p><b>Jenis Kelamin:</b> batang</p>
                 <p><b>Hobi:</b> pidato</p>
                 <p><b>Cita-cita:</b> nanam sawit</p>
             </div>
 
+            <!-- Card 2 -->
             <div class="card">
                 <div class="foto">
-                    <img src="e1bf2134be0edb049504c7bd11ceb459"Foto jokowi">
-                    </div>
-                <h3>jokowi</h3>
+                    <img src="e1bf2134be0edb049504c7bd11ceb459.jpg" alt="Foto Jokowi">
+                </div>
+                <h3>Jokowi</h3>
                 <p><b>NIS:</b> 002</p>
-                <p><b>Jenis Kelamin:</b>Laki-Laki</p>
+                <p><b>Jenis Kelamin:</b> Laki-Laki</p>
                 <p><b>Hobi:</b> ngutang</p>
                 <p><b>Cita-cita:</b> menjadi warga biasa</p>
             </div>
 
+            <!-- Card 3 -->
             <div class="card">
                 <div class="foto">
-                    <img src="de40dfa9d486f3a3907901d6267aaade"Foto bahlil">
-                    </div>
-                <h3>bahlil</h3>
+                    <img src="de40dfa9d486f3a3907901d6267aaade.jpg" alt="Foto Bahlil">
+                </div>
+                <h3>Bahlil</h3>
                 <p><b>NIS:</b> 003</p>
-                <p><b>Jenis Kelamin:</b> laki-laki</p>
+                <p><b>Jenis Kelamin:</b> Laki-laki</p>
                 <p><b>Hobi:</b> makan mbg</p>
-                <p><b>Cita-cita:</b> nak jadi pahlawan rakyat 
+                <p><b>Cita-cita:</b> nak jadi pahlawan rakyat</p>
             </div>
 
+            <!-- Card 4 -->
             <div class="card">
                 <div class="foto">
-                    <img src="da99ae4a9697a63928d34160d9e1c4b4"Foto Megawati">
-                    </div>
-        megachan <h3/h3>
+                    <img src="da99ae4a9697a63928d34160d9e1c4b4.jpg" alt="Foto Megawati">
+                </div>
+                <h3>Megachan</h3>
                 <p><b>NIS:</b> 004</p>
                 <p><b>Jenis Kelamin:</b> Perempuan</p>
                 <p><b>Hobi:</b> jual pulau</p>
-                <p><b>Cita-cita:</adm> Hakim</p>
-    
-    <!-- INFORMASI -->
-    <section class="info" id="informasi">
-
-        <h2>Informasi Kelas</h2>
-
-        <div class="info-box">
-
-            <p>👨‍🏫 <b>Wali Kelas:</b>Diah Bunga Gita Sari,S.Com.,Gr</p>
-
-            <p>👥 <b>Jumlah Peserta Didik:</b> 27 orang</p>
-
-            <p>🏫 <b>Ruang Kelas:</b> XII TKJ 1
-            </p>
-
-            <p>📅 <b>Tahun Pelajaran:</b> 2026/2027</p>
-
-            <p>🏆 <b>Motto:</b> Oke gas!! </p>
+                <p><b>Cita-cita:</b> Hakim</p>
+            </div>
 
         </div>
+    </section>
 
+    <!-- INFORMASI -->
+    <section class="info" id="informasi">
+        <h2>Informasi Kelas</h2>
+        <div class="info-box">
+            <p>👨‍🏫 <b>Wali Kelas:</b> Diah Bunga Gita Sari, S.Com., Gr</p>
+            <p>👥 <b>Jumlah Peserta Didik:</b> 27 orang</p>
+            <p>🏫 <b>Ruang Kelas:</b> XII TKJ 1</p>
+            <p>📅 <b>Tahun Pelajaran:</b> 2026/2027</p>
+            <p>🏆 <b>Motto:</b> Oke gas!!</p>
+        </div>
     </section>
 
     <!-- FOOTER -->
@@ -271,4 +262,4 @@
     </footer>
 
 </body>
-  </html>
+</html>
